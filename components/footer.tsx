@@ -82,24 +82,25 @@ export function Footer() {
           </div>
 
           {/* Services */}
-          <div>
-            <h4 className="text-xs sm:text-sm font-semibold text-foreground uppercase tracking-wider mb-3 sm:mb-4">
-              Services
-            </h4>
-            <ul className="space-y-2 sm:space-y-3">
-              {footerLinks.services.map((link) => (
-                <li key={link.name}>
-                  <a
-                    href={link.href}
-                    onClick={(e) => handleNavClick(e, link.href)}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 touch-manipulation"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <div className="text-center sm:text-left">
+  <h4 className="text-xs sm:text-sm font-semibold text-foreground uppercase tracking-wider mb-3 sm:mb-4">
+    Services
+  </h4>
+
+  <ul className="space-y-2 sm:space-y-3">
+    {footerLinks.services.map((link) => (
+      <li key={link.name}>
+        <a
+          href={link.href}
+          onClick={(e) => handleNavClick(e, link.href)}
+          className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 touch-manipulation"
+        >
+          {link.name}
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>
 
           {/* Company */}
           <div>

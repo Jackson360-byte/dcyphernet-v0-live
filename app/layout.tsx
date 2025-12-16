@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     canonical: "https://dcyphernet.com",
   },
   category: "technology",
-    generator: 'v0.app'
+    
 }
 
 export const viewport: Viewport = {
