@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { JotFormChatbot } from "@/components/jotform-chatbot"
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css"
 
 const inter = Inter({
@@ -125,6 +126,8 @@ export default function RootLayout({
           {children}
           <JotFormChatbot />
         </ThemeProvider>
+        <Analytics />
+
       </body>
     </html>
   )
