@@ -19,7 +19,7 @@ export function useTheme() {
   }, [resolvedTheme, setTheme])
 
   return {
-    theme: resolvedTheme as "dark" | "light" | undefined,
+    theme: resolvedTheme as "white" | "dark" | undefined,
     setTheme,
     toggleTheme,
   }
