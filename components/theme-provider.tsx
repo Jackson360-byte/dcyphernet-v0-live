@@ -15,11 +15,11 @@ export function useTheme() {
   const { theme, setTheme, resolvedTheme } = useNextTheme()
 
   const toggleTheme = React.useCallback(() => {
-    setTheme(resolvedTheme === "dark" ? "light" : "dark")
+    setTheme(resolvedTheme === "light" ? "dark" : "light")
   }, [resolvedTheme, setTheme])
 
   return {
-    theme: resolvedTheme as "white" | "dark" | undefined,
+    theme: resolvedTheme as "light" | "dark" | undefined,
     setTheme,
     toggleTheme,
   }
